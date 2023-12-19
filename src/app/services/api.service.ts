@@ -1,19 +1,27 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { tap, throwError } from 'rxjs';
+import axios from 'axios';
+import { Observable } from 'rxjs';
+import { User } from '../models/user.model';
+import { Repo } from '../models/repo.model';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ApiService {
+  constructor(private httpClient: HttpClient) { }
 
-  constructor(
-    private httpClient: HttpClient
-  ) { }
+  // fetch userinfo 
+  getUser(githubUsername: string): Observable<User> {
 
-  getUser(githubUsername: string) {
-    return this.httpClient.get(`https://api.github.com/users/${githubUsername}`);
+    return this.httpClient.get<User>(
+      `https://api.github.com/users/${githubUsername}`
+    );
   }
 
-  // implement getRepos method by referring to the documentation. Add proper types for the return type and params 
+  // get the repositories of a user
+  async getRepositories(url: any): Promise<{ data: Repo[], headers: any }> {
+    const res = await axios.get(url);
+    return res;
+  }
 }

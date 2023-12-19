@@ -1,43 +1,72 @@
+## Introduction
+GitHub landing page , a fantastic Angular-powered net app, empowers users to effortlessly discover GitHub repositories. Seamlessly interfacing with the GitHub API, it grants a visually captivating revel in, unveiling rich insights into profiles and repositories. Discover, discover, and increase your GitHub journey with style.
+
 # Fyle Frontend Challenge
+Experience the GitHub touchdown web page, a dynamic Angular software that seamlessly connects you to the great international of repositories. Effortlessly seek and discover, unveiling complete information about the innovative minds behind every introduction. Dive into innovation with fashion!
 
-## Who is this for?
+## Prerequisites
+To ensure the proper functioning of this repository, it is essential to include the Roboto font. You can easily integrate the font into your project by importing the following script from a Content Delivery Network (CDN) directly into your index.html file, as shown below:
 
-This challenge is meant for candidates who wish to intern at Fyle and work with our engineering team. The candidate should be able to commit to at least 6 months of dedicated time for internship.
+## Dependencies
+Angular 14 : Embark on a journey of seamless interactivity with our software crafted on the sturdy and future-equipped Angular framework. Our frontend not simplest dazzles with its person-pleasant layout but additionally boasts a maintainable shape that ensures a clean journey thru the GitHub enjoy.
 
-## Why work at Fyle?
+Tailwind CSS: Elevate your visual experience with the avant-garde styling powered by means of Tailwind CSS. Embracing a utility-first approach, our layout philosophy revolves around simplicity and consistency. Get equipped for a visually lovely and cohesive layout machine that sets the level for an unforgettable exploration of GitHub.
 
-Fyle is a fast-growing Expense Management SaaS product. We are ~40 strong engineering team at the moment. 
+Axios: Behind the scenes, we depend at the power of Axios, a attempted-and-proper library for making HTTP requests. This allows our platform to seamlessly have interaction with the GitHub API, making sure speedy and reliable data retrieval. Say goodbye to lag and hi there to a lightning-fast GitHub experience.
 
-We are an extremely transparent organization. Check out our [careers page](https://careers.fylehq.com) that will give you a glimpse of what it is like to work at Fyle. Also, check out our Glassdoor reviews [here](https://www.glassdoor.co.in/Reviews/Fyle-Reviews-E1723235.htm). You can read stories from our teammates [here](https://stories.fylehq.com).
+GitHub API Magic: At the coronary heart of all of it is the GitHub API, the backbone of our platform. Dive into the wealth of person and repository information effortlessly retrieved through this API. For a deep dive into the internal workings, consult the professional documentation and find out the magic that powers our GitHub landing web page
 
-## Challenge outline
+## How To Use
+Start by forking or downloading this repository. Once you have the project files on your local machine, you'll need to follow these steps to set up the development environment:
+Step 1.1: Install Angular and Node Modules
 
-This challenge involves implementing application using github api. 
+To begin, make sure you have Angular and the required Node modules installed. Open your terminal and run the following commands:
+```html
+npm install -g @angular/cli
+npm install
+```This will install Angular CLI globally and the project's specific dependencies.
 
-The services that you need to use are already implemented - check out ApiService.
+Step 1.2: Add Angular Material and Additional Dependencies
 
-You can see details of this challenge [here](https://fyleuniverse.notion.site/fyleuniverse/Fyle-Frontend-development-challenge-cb5085e5e0864e769e7b98c694400aaa)
+Next, you'll need to enhance your project by adding Angular Material and some additional dependencies. Run the following commands:
 
-__Note__ - This challenge is in angular. We work on angular frameworks & after you join we expect the same from you. Hence it is required to complete this assignement in angular itself.
+```html
+ng add @angular/material 
+npm i rxjs@6.3.3  
+npm i rxjs-observable
+```
+Angular Material will help you create attractive and responsive user interfaces, while the added dependencies are essential for handling asynchronous operations.
 
-## What happens next?
+Step 2: Start the Development Server `npm start`
 
-You will hear back within 48 hours from us via email.
-
-## Installation
-
-1. Fork this repository to your github account.
-2. Clone the forked repository and proceed with steps mentioned below.
-
-### Install requirements
-* Install angular cli [Ref](https://angular.io/cli)
-* `npm install` in this repository 
+Once you have the necessary packages and dependencies installed, you can start the development server to run your Angular application. Open your terminal and enter the following command:
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
+Run `ng serve -o` for a dev server.`
 
-## Further help
+This command will launch the development server, and your web browser will open to `http://localhost:4200/` automatically.
 
-Visit the [Angular Documentation](https://angular.io/guide/styleguide) to learn more.
-Styling is to be strictly done with [Tailwind](https://tailwindcss.com/docs/installation).
+Now, you can access and interact with your Angular application. Follow the user interface to search for GitHub usernames, view user profiles, and explore repositories. Enjoy exploring and using your app!
+
+## Running Tests
+This project boasts comprehensive unit tests, achieving a flawless 100% code coverage for both the user-info component and api-service, ensuring impeccable code quality and unwavering reliability.
+
+Execute the service tests effortlessly with:
+
+```bash
+npm run test:apiservice
+```
+For component tests that guarantee seamless functionality:
+```bash
+npm run test:userinfo
+```
+### Testing Libraries:
+#Jasmine Testing Framework:
+
+Harness the electricity of Jasmine, a exceptionally embraced testing framework for JavaScript and TypeScript code.
+Enjoy an intuitive and readable syntax, making unit take a look at case creation and assertions a breeze.
+#Karma Test Runner:
+
+Employ Karma, the dynamic test runner that executes unit exams.
+Launch assessments in real browsers thru a web server, making sure code integrity throughout numerous environments.

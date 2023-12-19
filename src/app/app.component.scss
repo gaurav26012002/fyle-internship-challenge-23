@@ -1,0 +1,44 @@
+@import "~font-awesome/css/font-awesome.css";
+.backg{
+  background-color: rgb(0, 70, 70);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  width: 100vw;
+}
+
+.w-100 {
+  width: 22rem;
+}
+.buts{
+  background-color: rgb(0, 71, 65);
+  border-radius: 3rem; /* You can adjust the radius as needed for your desired roundness */
+  border: 1px solid #000; /* Add a border with a color of your choice */
+  color: #fff; /* Set the text color to white or a contrasting color */
+  padding: 10px 20px; /* Adjust padding as needed */
+  text-align: center; /* Center the text within the button */
+  text-decoration: none; /* Remove underlines from links */
+  display: inline-block; /* Make sure it's treated as a block element but stays inline */
+  font-size: 16px; /* Adjust the font size as needed */
+  
+}
+.bgf{
+  background-color: rgb(85, 248, 234);
+  border-radius: 3rem;
+}
+.sticky-form {
+  position: sticky;
+  top: 0px;
+  background-color: rgb(0, 71, 65);
+}
+
+@media (max-width: 768px) {
+  .br-sm {
+    border-radius: 0.5rem;
+  }
+
+  .sticky-form {
+    position: unset;
+  }
+}
